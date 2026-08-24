@@ -22,7 +22,7 @@ jobs:
       - name: Instalar Buildozer
         run: pip install --upgrade buildozer cython==0.29.36
       - name: Compilar APK
-        run: buildozer -v android debug
+        run: yes | buildozer -v android debug
       - name: Enviar APK gerado
         uses: actions/upload-artifact@v4
         with:
